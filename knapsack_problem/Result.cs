@@ -9,8 +9,8 @@ namespace Knapsack
     class Result
     {
         public readonly List<int> itemNumbers = [];
-        private readonly int totalValue;
-        private readonly int totalWeight;
+        public  int totalValue { get; private set; }
+        public int totalWeight { get; private set; }
 
         public Result(int v, int w)
         {
