@@ -27,9 +27,9 @@ namespace UnitTests
                             break;
                         }
                     }
-                    Assert.IsTrue(doesFit && result.itemNumbers.Count != 0);
-                    Assert.IsTrue(!doesFit && result.itemNumbers.Count == 0);
+                    Assert.IsTrue(doesFit && (result.itemNumbers.Count != 0) || (!doesFit && (result.itemNumbers.Count == 0)));
                 }
+
             }
         }
     }

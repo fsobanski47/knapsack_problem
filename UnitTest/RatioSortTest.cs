@@ -15,7 +15,7 @@ namespace UnitTests
                 Random random = new();
                 Problem problem = new(size, random.Next());
                 Result result = problem.Solve(capacity);
-                for (int i = 0; i < size; i++)
+                for (int i = 0; i <  - 1; i++)
                 {
                     double ratio1 = (double)problem.itemList[i].Value / problem.itemList[i].Weight;
                     double ratio2 = (double)problem.itemList[i + 1].Value / problem.itemList[i + 1].Weight;
